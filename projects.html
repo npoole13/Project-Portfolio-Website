@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nicholas Poole Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Optional custom CSS -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- jQuery (needed for navbar load) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body class="light-page">
+
+    <!-- Navbar Placeholder -->
+    <div id="nav-placeholder"></div>
+
+    <script>
+        // Load the navbar dynamically
+        $("#nav-placeholder").load("navbar.html #site-nav");
+    </script>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+
+        <!-- Hero Section -->
+        <section class="p-5 mb-4 bg-body-tertiary rounded-3 text-center">
+            <h1 class="display-4 mb-3">Welcome to My Portfolio</h1>
+            <p class="lead">Explore my skills, projects, and experience in manufacturing and technology.</p>
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+        </section>
+
+        <!-- Projects Section -->
+        <h2 id="projects" class="text-center mb-4">📁 Projects</h2>
+
+        <!-- Project Card 1 -->
+        <div class="card text-center mb-4">
+            <div class="card-header" style="font-size: 20pt; font-weight: bold;">
+                Designed and Fabricated Multi Tool Using a Water Jet Cutter
+            </div>
+            <div class="card-body">
+                <img src="Water Jet Saw Picture.png" alt="WaterJet Multi-Tool" class="img-fluid">
+            </div>
+            <div class="card-footer text-start">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><strong>Made out of 16 gauge Steel</strong></li>
+                    <li class="list-group-item"><strong>Used Solidworks CAD Program to Design Multi-Tool</strong></li>
+                    <li class="list-group-item"><strong>Transferred into Forest Industries Slicer Program</strong></li>
+                    <li class="list-group-item"><strong>Used the Forest Industries Mitey Jet Mill to Cut Out</strong></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Project Card 2 (Template) -->
+        <div class="card text-center mb-4">
+            <div class="card-header" style="font-size: 20pt; font-weight: bold;">
+                4x4 CNC Router Sign
+            </div>
+            <div class="card-body">
+                <img src="CNC Router Sign.png" alt="CNC Router Sign Picture" class="img-fluid">
+            </div>
+            <div class="card-footer text-start">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><strong>Designed Using V-Carve Pro CAD Software</strong></li>
+                    <li class="list-group-item"><strong>Cut on 4x4 Forest Scientific CNC Router</strong></li>
+                    <li class="list-group-item"><strong>Finished with Sanding and Linseed Oil</strong></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Project Card 3 (Template) -->
+        <div class="card text-center mb-4">
+            <div class="card-header" style="font-size: 20pt; font-weight: bold;">
+                CNC Aluminum Coaster
+            </div>
+            <div class="card-body">
+                <img src="Coaster.png" alt="Aluminum Coaster" class="img-fluid">
+            </div>
+            <div class="card-footer text-start">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><strong>Made from 5x5 Block of Aluminium</strong></li>
+                    <li class="list-group-item"><strong>CAD Program was Preloaded into Machine</strong></li>
+                    <li class="list-group-item"><strong>Milled on the Haas VF-2 CNC Machine</strong></li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
